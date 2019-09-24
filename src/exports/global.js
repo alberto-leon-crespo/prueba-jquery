@@ -1,3 +1,5 @@
+var globaljQueryInstance;
+
 define( [
 	"../core"
 ], function( jQuery, noGlobal ) {
@@ -11,6 +13,8 @@ var
 
 	// Map over the $ in case of overwrite
 	_$ = window.$;
+
+globaljQueryInstance = jQuery;
 
 jQuery.noConflict = function( deep ) {
 	if ( window.$ === jQuery ) {
