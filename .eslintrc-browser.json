@@ -21,6 +21,7 @@
 	},
 
 	"rules": {
+		"no-unused-vars": [2, {"vars": "all", "varsIgnorePattern": "globaljQueryInstance"}],
 		"strict": ["error", "function"]
 	}
 }
